@@ -1,0 +1,9 @@
+AJ Player Roku - integração experimental Guia de Jogos
+
+1. Publique esta pasta no Netlify com deploy conectado ao GitHub (precisa instalar dependências npm).
+2. A função estará em https://SEU-SITE.netlify.app/.netlify/functions/canais
+3. No ZIP Roku V1.47, edite config/guia_endpoint.txt e substitua pelo endereço HTTPS acima (sem #).
+4. Compacte novamente a raiz do app (manifest deve estar na raiz) e instale na Roku.
+5. Se o endpoint estiver vazio, a Roku continua usando os dados ESPN. Se o Guia de Jogos não responder ou não encontrar o confronto, o canal atual é preservado.
+
+IMPORTANTE: Integração experimental, não validada com requisições reais ao site nem testada na Roku. Verifique as permissões/termos do site para uso automatizado. Sem deploy e configuração do endpoint, não há enriquecimento de canais.
